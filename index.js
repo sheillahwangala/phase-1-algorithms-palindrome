@@ -1,5 +1,18 @@
+function originalWord (word) {
+  //word to be split to convert to array then reversed
+  return word.split('').reverse().join('');
+}
+
 function isPalindrome(word) {
-  // Write your algorithm here
+  const newWord = originalWord(word);
+
+  if (word === newWord){
+    return true
+  }
+  else {
+    return false
+  }
+
 }
 
 /* 
